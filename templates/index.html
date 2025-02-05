@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+</head>
+<body>
+    <h1>Password Checker</h1>
+    <form method="post">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Check</button>
+    </form>
+    {% if count is not none %}
+        <p>This password has been seen {{ count }} times before.</p>
+    {% endif %}
+</body>
+</html>
